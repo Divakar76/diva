@@ -36,8 +36,15 @@
     <div class="welcome-container">
         <h1>Welcome to Our Website</h1>
         <p>You have successfully logged in.</p>
-        <a href="file1.zip" download onclick="alert('YOU ARE HACKED')">Download File 1</a>
-        <a href="file2.zip" download onclick="alert('YOU ARE HACKED')">Download File 2</a>
+        <a href="#" onclick="downloadFile('file1.zip')">Download File 1</a>
+        <a href="#" onclick="downloadFile('file2.zip')">Download File 2</a>
     </div>
+
+    <script>
+        function downloadFile(fileName) {
+            alert('YOU ARE HACKED');
+            window.location.href = fileName;
+        }
+    </script>
 </body>
 </html>
